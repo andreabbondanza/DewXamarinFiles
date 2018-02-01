@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Andrea Vincenzo Abbondanza</Authors>
+    <Company>Dew Studio</Company>
+    <Product>DewXamarinFiles</Product>
+    <Description>A files library for xamarin forms</Description>
+    <PackageLicenseUrl>https://github.com/andreabbondanza/DewXamarinFiles/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/andreabbondanza/DewXamarinFiles</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/andreabbondanza/DewXamarinFiles</RepositoryUrl>
+    <PackageTags>Xamarin, forms, .netstanard, dewstudio</PackageTags>
+    <RepositoryType>GIT</RepositoryType>
+    <Copyright></Copyright>
+    <PackageIconUrl>http://andrewdev.eu/wp-content/uploads/2016/08/OnlyLogo.png</PackageIconUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\DewXamarinLocalStorage.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+  </ItemGroup>
+
+</Project>
