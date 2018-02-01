@@ -14,10 +14,13 @@
     <RepositoryType>GIT</RepositoryType>
     <Copyright></Copyright>
     <PackageIconUrl>http://andrewdev.eu/wp-content/uploads/2016/08/OnlyLogo.png</PackageIconUrl>
+    <PackageId>DewXamarinFiles</PackageId>
+    <AssemblyName>DewXamarinFiles</AssemblyName>
+    <RootNamespace>DewXamarinFiles</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard2.0\DewXamarinLocalStorage.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard2.0\DewXamarinFiles.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
