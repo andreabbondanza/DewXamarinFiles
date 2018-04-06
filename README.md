@@ -79,7 +79,7 @@ public class Example
 //-----------------------------------------------------------------------
     public async Task<bool> WriteToken()
     {
-        if(!DewXamarinFiles.CheckLocalSettingExists("token"))
+        if(!(await DewXamarinFiles.CheckLocalSettingExists("token")))
             return false;
         var token = await DewXamarinFiles.ReadLocalSettings("token");
         if(token.Length < 10)
@@ -96,7 +96,7 @@ public class Example
 //-----------------------------------------------------------------------
     public async Task<User> ReadUser()
     {
-        if(!DewXamarinFiles.CheckLocalSettingExists("user"))
+        if(!(await DewXamarinFiles.CheckLocalSettingExists("user")))
             return null;
         return DewXamarinFiles.ReadLocalSetting<User>("user");
     }
