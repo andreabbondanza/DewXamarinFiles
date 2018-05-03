@@ -17,6 +17,8 @@
     <PackageId>DewXamarinFiles</PackageId>
     <AssemblyName>DewXamarinFiles</AssemblyName>
     <RootNamespace>DewXamarinFiles</RootNamespace>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Fixed write local byte</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

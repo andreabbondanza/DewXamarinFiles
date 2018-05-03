@@ -71,7 +71,7 @@ namespace DewCore.Xamarin.Files
                 var offset = 0;
                 while (offset <= s.Length)
                 {
-                    await file.WriteAsync(s, BufferSize, offset);
+                    await file.WriteAsync(s, offset, BufferSize);
                     offset += BufferSize;
                 }
             }
