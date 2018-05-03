@@ -20,7 +20,7 @@ namespace DewCore.Xamarin.Files
         /// <summary>
         /// Default buffer size for file write/read
         /// </summary>
-        public static int BufferSize = 1024;
+        public static int BufferSize = 0;
         /// <summary>
         /// Read a file as byte array (if app, pass DewXamarinFiles.ApplicationPath() as basepath)
         /// </summary>
@@ -68,8 +68,9 @@ namespace DewCore.Xamarin.Files
         {
             using (FileStream file = File.Create(path + Path.DirectorySeparatorChar + name))
             {
+                BufferSize = BufferSize == 0 ? s.Length : BufferSize;
                 var offset = 0;
-                while (offset <= s.Length)
+                while (offset < s.Length)
                 {
                     await file.WriteAsync(s, offset, BufferSize);
                     offset += BufferSize;
